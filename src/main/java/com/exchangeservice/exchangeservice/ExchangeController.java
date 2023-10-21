@@ -13,9 +13,9 @@ public class ExchangeController {
 		ExcVal excVal = null;
 		
 		if(Currencies.USD==from && Currencies.IND==to) {
-			excVal = new ExcVal(401L,Currencies.USD,Currencies.IND,60);
+			excVal = new ExcVal(401L,from,to,60);
 		}else if(Currencies.USD==from && Currencies.YEN==to) {
-			excVal = new ExcVal(401L,Currencies.USD,Currencies.YEN,160);
+			excVal = new ExcVal(401L,from,to,160);
 		}
 		
 		return excVal;
